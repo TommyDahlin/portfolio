@@ -21,6 +21,48 @@
             "description": "Kontakta mig gärna på ",
             "or": " eller ",
             "email": "E-post"
+        },
+        "regards": {
+            "goodDay": "Ha en bra dag!",
+            "regards": "Med vänliga hälsningar, Tommy Dahlin."
+        }
+    },
+    "projects": {
+        "title": "Dessa är några av mina projekt.",
+        "project1": {
+            "title": "Project 1 temporär text",
+            "description": "Description of project 1."
+        },
+        "project2": {
+            "title": "Project 2 temporär text",
+            "description": "Description of project 2."
+        },
+        "project3": {
+            "title": "Project 3 temporär text",
+            "description": "Description of project 3."
+        }
+    },
+    "skills": {
+        "skillsHeader": "Dessa är mina färdigheter: ",
+        "skillsList": {
+            "skill1": "JavaScript",
+            "skill2": "React",
+            "skill3": "Node.js",
+            "skill4": "CSS",
+            "skill5": "HTML"
+        },
+        "learningHeader": "Detta är vad jag jobbar på att lära mig: ",
+        "learningList": {
+            "learning1": "TypeScript",
+            "learning2": "Next.js",
+            "learning3": "Vite",
+            "learning4": "Redux",
+            "learning5": "Git",
+            "learning6": "HTML",
+            "learning7": "CSS",
+            "learning8": "Node.JS",
+            "learning9": "Bun",
+            "learning10": "deno"
         }
     }
-    }
+}

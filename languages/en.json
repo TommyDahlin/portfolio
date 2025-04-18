@@ -22,6 +22,48 @@
         "description": "Feel free to reach out to me on",
         "or": " or ",
         "email": "E-mail"
+    },
+    "regards": {
+        "goodDay": "Have a great day!",
+        "regards": "Best regards, Tommy Dahlin."
+    }
+},
+"projects": {
+    "title": "These are some of my projects.",
+    "project1": {
+        "title": "Project 1 temporary text",
+        "description": "Description of project 1."
+    },
+    "project2": {
+        "title": "Project 2 temporary text",
+        "description": "Description of project 2."
+    },
+    "project3": {
+        "title": "Project 3 temporary text",
+        "description": "Description of project 3."
+    }
+},
+"skills": {
+    "skillsHeader": "These are my skills.",
+    "skillsList": {
+        "skill1": "JavaScript",
+        "skill2": "React",
+        "skill3": "Node.js",
+        "skill4": "CSS",
+        "skill5": "HTML"
+    },
+    "learningHeader": "This is what i'm currently working on learning",
+    "learningList": {
+        "learning1": "TypeScript",
+        "learning2": "Next.js",
+        "learning3": "Vite",
+        "learning4": "Redux",
+        "learning5": "Git",
+        "learning6" : "HTML",
+        "learning7" : "CSS",
+        "learning8" : "Node.JS",
+        "learning9" : "Bun",
+        "learning10" : "deno"
     }
 }
 }

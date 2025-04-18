@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-const Text = ({ text, size, link, hover }) => {
+const Text = ({ text, size, link, hover, backgroundColor }) => {
     return (
-        <TextWrapper hover={hover}>
+        <TextWrapper hover={hover} backgroundColor={backgroundColor}>
         <StyledText className="text" size={size}>{link ? <a href={link}>{text}</a> : text}</StyledText>
         </TextWrapper>
     )
@@ -17,6 +17,7 @@ const StyledText = styled.p`
 const TextWrapper = styled.div`
 margin: 0;
 padding: 0;
+background-color: ${props => props.backgroundColor ? props.backgroundColor : 'transparent'};
 :hover {
     transform: scale(${props => props.hover ? '1' : '1'});
     transition: transform .35s ease-out;   

@@ -13,11 +13,14 @@ import Contact from "./components/Contact";
 function App() {
   const { t } = useTranslation();
   // Check for saved theme in local storage
-  document.body.dataset.theme = localStorage.getItem("theme") || "dark";
+    document.body.dataset.theme = localStorage.getItem("theme") || "dark";
+
   return (
     <>
       <Header />
-      <TitleHolder><Text text={t("app.major-title")} size={"4rem"} hover={2} /></TitleHolder>
+      <TitleHolder>
+        <Text text={t("app.major-title")} size={"4rem"} hover={2} />
+      </TitleHolder>
       <Wrapper className="wrapper">
         <ul className="pointer-list">
           <Text text={t("app.title")} hover={3} size={"1.8rem"} />
@@ -25,15 +28,13 @@ function App() {
           <Projects />
           <Skills />
           <Contact />
-
-
           <BottomTextHolder>
             <Text
               text={t("app.contact.email") + ": TommyDahlin95@outlook.com"}
               size={"1.5rem"}
             />
-            <Text text="Have a great day!" size={"1.5rem"} />
-            <Text text="Best regards, Tommy Dahlin" size={"1.5rem"} />
+            <Text text={t("app.regards.goodDay")} size={"1.5rem"} />
+            <Text text={t("app.regards.regards")} size={"1.5rem"} />
           </BottomTextHolder>
         </ul>
         <ImgHolder>
@@ -52,8 +53,6 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  overflow-x: hidden;
-  
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -83,13 +82,13 @@ const BottomTextHolder = styled.div`
 const ImgHolder = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding-left: 4rem; /* Use padding instead of margin */
-  width: calc(100% - 4rem); /* Adjust width accounting for padding */
+  padding: 4rem;
+  width: calc(100% - 4rem);
   margin-left: 4rem;
   padding: 0;
+  position: relative;
+  top: 10;
   width: 100%;
-  
   @media (max-width: 768px) {
     padding-left: 0;
     width: 100%;
