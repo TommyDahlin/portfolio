@@ -16,6 +16,15 @@
 .dropdown {
   border-radius: 7px;
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 [data-theme='light'] {
   color: #213547;
@@ -70,6 +79,7 @@ body {
   place-items: center;
   min-width: 320px;
   transition: all 0.175s ease, color 0.175s ease;
+  width: 100%;
 }
 
 h1 {
@@ -101,11 +111,14 @@ button:focus-visible {
   z-index: 1;
   justify-content: space-around;
   align-items: center;
-  min-width: 80vw;
+  width: 100%;
   max-height: fit-content;
   border-bottom: 3px solid #1a1a1a;
   position: sticky;
   top: 0;
+  button {
+    margin: 0 1rem 0 1rem;
+  }
 }
 .footer {
   display: flex;
@@ -132,7 +145,7 @@ button:focus-visible {
 }
 .pointer-list {
   border-radius: 7px;
-  width: 100%;
+  width: 80%;
   margin-left: 20vw;
 }
 

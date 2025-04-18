@@ -18,7 +18,7 @@ const TextWrapper = styled.div`
 margin: 0;
 padding: 0;
 :hover {
-    transform: scale(${props => props.hover ? '1.05' : '1'});
+    transform: scale(${props => props.hover ? '1' : '1'});
     transition: transform .35s ease-out;   
 }
 `

@@ -41,7 +41,7 @@ const Header = () => {
     };
     
     return (
-      <div className="header" theme-data={theme}>
+      <Wrapper className="header" theme-data={theme}>
         <Text text={t('header.title')} size="4rem" hover={3}/>
         <ButtonHolder>
         <Button 
@@ -52,7 +52,7 @@ const Header = () => {
           <Button text={t('header.changeLanguage')} onClick={() => changeLanguage(t("header.lang"))} />
         </div>
         </ButtonHolder>
-      </div>
+      </Wrapper>
     )
 }
 
@@ -63,3 +63,9 @@ display: flex;
 justify-content: space-between;
 min-width: 12vw;
 `
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+`;

@@ -5,7 +5,10 @@ import React from "react";
 import Text from "./components/Text";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import Photo from './img/pfp.jpg'
+import Photo from "./img/pfp.jpg";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   const { t } = useTranslation();
@@ -14,68 +17,28 @@ function App() {
   return (
     <>
       <Header />
-      <Wrapper className="wrapper" >
-        <TextHolder>
-        <Text text={t('app.major-title')} size={"4rem"} hover={2}/>
+      <TitleHolder><Text text={t("app.major-title")} size={"4rem"} hover={2} /></TitleHolder>
+      <Wrapper className="wrapper">
         <ul className="pointer-list">
-          <TextHolder>
-          <Text
-          text={t('app.title')}
-          hover={3} 
-          size={"1.8rem"} />
-          <Text
-            text={t('app.description')}
-            size={"1.5rem"} />
-            </TextHolder>
-            <TextHolder>
-          <Text
-            text={t('app.projects.title')}
-            hover={3}
-            size={"1.8rem"} />
-          <Text 
-          text={t('app.projects.description')}
-          size={"1.5rem"} />
-            </TextHolder>
-            <TextHolder>
-          <Text
-            text={t('app.skills.title')}
-            hover={3}
-            size={"1.8rem"} />
-          <Text 
-          text={t('app.skills.description')}
-          size={"1.5rem"} />
-            </TextHolder>
-          <TextHolder>
-          <Text
-            text={t('app.contact.title')}
-            hover={3}
-            size={"1.8rem"} />
-          <LinkHolders>
-            <Text text = {t('app.contact.description')}
-            size={"1.5rem"} />
-            <Text text = "LinkedIn" size={"1.5rem"} link={"https://www.linkedin.com/in/tommy-dahlin-5171a72aa/"}/>
+          <Text text={t("app.title")} hover={3} size={"1.8rem"} />
+          <Text text={t("app.description")} size={"1.5rem"} />
+          <Projects />
+          <Skills />
+          <Contact />
+
+
+          <BottomTextHolder>
             <Text
-            text=" or "
-            size={"1.5rem"} />
-            <Text text = "GitHub" size={"1.5rem"} link={"https://github.com/TommyDahlin"}/>  
-            </LinkHolders>
-            </TextHolder>
-            <BottomTextHolder>
-          <Text 
-          text={t('app.contact.email') + ": TommyDahlin95@outlook.com"}
-          size={"1.5rem"} />
-          <Text 
-          text="Have a great day!" 
-          size={"1.5rem"} />
-          <Text 
-          text="Best regards, Tommy Dahlin" 
-          size={"1.5rem"} />
+              text={t("app.contact.email") + ": TommyDahlin95@outlook.com"}
+              size={"1.5rem"}
+            />
+            <Text text="Have a great day!" size={"1.5rem"} />
+            <Text text="Best regards, Tommy Dahlin" size={"1.5rem"} />
           </BottomTextHolder>
         </ul>
-        </TextHolder>
         <ImgHolder>
           <StyledImg src={Photo} alt="Tommy Dahlin" />
-            </ImgHolder>
+        </ImgHolder>
       </Wrapper>
       <Footer />
     </>
@@ -88,17 +51,23 @@ const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-
-`;
-const TextHolder = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
   width: 100%;
+  overflow-x: hidden;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
+
+const TitleHolder = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10%; /* Use padding instead of margin */
+  width: 90%; /* Adjust width to account for padding */
+`;
+
 const BottomTextHolder = styled.div`
   display: flex;
   flex-direction: column;
@@ -113,25 +82,27 @@ const BottomTextHolder = styled.div`
 `;
 const ImgHolder = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-items: flex-end;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 4rem; /* Use padding instead of margin */
+  width: calc(100% - 4rem); /* Adjust width accounting for padding */
   margin-left: 4rem;
   padding: 0;
   width: 100%;
+  
+  @media (max-width: 768px) {
+    padding-left: 0;
+    width: 100%;
+  }
   img {
-    transition: transform .35s ease-out;
+    transition: transform 0.35s ease-out;
   }
   img:hover {
     transform: scale(1.05);
-    transition: transform .35s ease-out;
+    transition: transform 0.35s ease-out;
   }
 `;
-const LinkHolders = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  gap: 0.5rem;
-`;
+
 const StyledImg = styled.img`
   width: 400px;
   height: 400px;
@@ -142,5 +113,5 @@ const StyledImg = styled.img`
   :hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
-   }
+  }
 `;
