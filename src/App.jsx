@@ -15,7 +15,6 @@ function App() {
     <>
       <Header />
       <Wrapper className="wrapper" >
-        <span></span>
         <TextHolder>
         <Text text={t('app.major-title')} size={"4rem"} hover={2}/>
         <ul className="pointer-list">
