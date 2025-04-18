@@ -8,5 +8,6 @@ export default defineConfig({
   },
   resolve: {
     dedupe: ['react', 'react-dom', 'i18next', 'react-i18next']
-  }
+  },
+  base: '/portfolio/',
 })
