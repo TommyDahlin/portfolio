@@ -9,6 +9,7 @@ import Photo from "./img/pfp.jpg";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import ChangeableTitle from "./components/ChangeableTitle";
 
 function App() {
   const { t } = useTranslation();
@@ -18,23 +19,24 @@ function App() {
   return (
     <>
       <Header />
-      <TitleHolder>
-        <Text text={t("app.major-title")} size={"4rem"} hover={2} />
+      <TitleHolder className="title-holder">
+        <Text text={t("app.major-title")} size={4} />
+        <ChangeableTitle />   
       </TitleHolder>
       <Wrapper className="wrapper">
         <ul className="pointer-list">
-          <Text text={t("app.title")} hover={3} size={"1.8rem"} />
-          <Text text={t("app.description")} size={"1.5rem"} />
+          <Text text={t("app.title")} hover={3} size={"1.8"} />
+          <Text text={t("app.description")} size={"1.5"} />
           <Projects />
           <Skills />
           <Contact />
           <BottomTextHolder>
             <Text
               text={t("app.contact.email") + ": TommyDahlin95@outlook.com"}
-              size={"1.5rem"}
+              size={"1.5"}
             />
-            <Text text={t("app.regards.goodDay")} size={"1.5rem"} />
-            <Text text={t("app.regards.regards")} size={"1.5rem"} />
+            <Text text={t("app.regards.goodDay")} size={"1.5"} />
+            <Text text={t("app.regards.regards")} size={"1.5"} />
           </BottomTextHolder>
         </ul>
         <ImgHolder>
@@ -61,10 +63,15 @@ const Wrapper = styled.div`
 const TitleHolder = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   padding-left: 10%; /* Use padding instead of margin */
   width: 90%; /* Adjust width to account for padding */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 4rem;
+  }
 `;
 
 const BottomTextHolder = styled.div`

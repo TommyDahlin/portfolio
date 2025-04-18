@@ -64,5 +64,10 @@
             "learning9": "Bun",
             "learning10": "deno"
         }
+    },
+    "changeableTitle": {
+        "title": "Ändra titel",
+        "description": "Detta är en demo för en ändringsbar titel.",
+        "label": "Ändra titelns egenskaper: "
     }
 }

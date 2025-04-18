@@ -65,5 +65,10 @@
         "learning9" : "Bun",
         "learning10" : "deno"
     }
+},
+"changeableTitle": {
+    "title": "Change title",
+    "description": "This is a demo for a changable title.",
+    "label": "Change titles properties: "
 }
 }

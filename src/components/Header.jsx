@@ -42,7 +42,7 @@ const Header = () => {
     
     return (
       <Wrapper className="header" theme-data={theme}>
-        <Text text={t('header.title')} size="4rem" hover={3}/>
+        <Text text={t('header.title')} size="4" hover={3}/>
         <ButtonHolder>
         <Button 
           text={t('header.toggleTheme')} 
@@ -62,10 +62,18 @@ const ButtonHolder = styled.div`
 display: flex;
 justify-content: space-between;
 min-width: 12vw;
+@media screen and (max-width: 768px) {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 `
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+  }
 `;
