@@ -5,7 +5,7 @@ import React from "react";
 import Text from "./components/Text";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import Photo from "../public/475845946_10162492645418184_7553713412501506310_n.jpg";
+import Photo from './img/pfp.jpg'
 
 function App() {
   const { t } = useTranslation();
