@@ -1,0 +1,27 @@
+{
+"header": {
+    "title": "Tommy Dahlin",
+    "toggleTheme": "Toggle theme",
+    "changeLanguage": "Byt till Svenska",
+    "lang": "sv"
+},
+"app": {
+    "major-title": "Simplicity is key",
+    "title": "Portfolio",
+    "description": "This is my portfolio, where I showcase my projects and skills.",
+    "projects": {
+        "title": "Projects",
+        "description": "Here are some of my projects."
+    },
+    "skills": {
+        "title": "Skills",
+        "description": "These are my skills."
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Feel free to reach out to me on",
+        "or": " or ",
+        "email": "E-mail"
+    }
+}
+}

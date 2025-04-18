@@ -1,0 +1,26 @@
+{
+    "header": {
+        "title": "Tommy Dahlin",
+        "toggleTheme": "Byt tema",
+        "changeLanguage": "Change to English",
+        "lang": "en"
+    },
+    "app": {
+        "title": "Portfölj",
+        "description": "Detta är min portfölj, där jag presenterar mina projekt och färdigheter.",
+        "projects": {
+            "title": "Projekt",
+            "description": "Detta är några av mina projekt."
+        },
+        "skills": {
+            "title": "Färdigheter",
+            "description": "Detta är mina färdigheter."
+        },
+        "contact": {
+            "title": "Kontakt",
+            "description": "Kontakta mig gärna på ",
+            "or": " eller ",
+            "email": "E-post"
+        }
+    }
+    }
