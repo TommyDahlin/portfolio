@@ -70,8 +70,9 @@ const TitleHolder = styled.div`
   width: 90%; /* Adjust width to account for padding */
   @media (max-width: 768px) {
     flex-direction: column;
-    padding-left: 0;
+    padding: 5px;
     margin-bottom: 4rem;
+    margin-left: 1rem;
   }
 `;
 
