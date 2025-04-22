@@ -9,6 +9,7 @@ const Projects = () => {
   const { t } = useTranslation();
   return (
     <Holder>
+      <h2>Projects</h2>
       <ProjectPart 
         title={t("projects.project1.title")}
         description={t("projects.project1.description")}

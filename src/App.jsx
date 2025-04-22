@@ -49,7 +49,7 @@ function App() {
 export default App;
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
@@ -65,6 +65,7 @@ const TitleHolder = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
   align-items: center;
   padding-left: 10%; /* Use padding instead of margin */
   width: 90%; /* Adjust width to account for padding */

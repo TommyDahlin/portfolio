@@ -54,7 +54,6 @@ const ChangeableTitle = () => {
     <>
         <Holder>
       <Wrapper>
-        <label htmlFor="selectable">{t("changeableTitle.label")}</label>
         <Text text="Title" size={titleSize} color={titleColor} />
         </Wrapper>
         <Wrapper>
