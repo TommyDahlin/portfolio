@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { ProjectPart } from "./ProjectPart";
-import GithubWhite from "../img/github-mark-white.svg";
+import Celemo from "../assets/Celemo.png";
+import Claims from "../assets/Claims.png"
+import Schackeriet from "../assets/Schackeriet.png"
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -14,12 +16,12 @@ const Projects = () => {
         { returnObjects: true })}
         descriptionList={t("projects.project1.descriptionList",
         { returnObjects: true })} 
-        img={GithubWhite}
+        img={Celemo}
         linkList = {t("projects.project1.linkList",
           { returnObjects: true })}
           linkNamesList = {t("projects.project1.linkNames",
           { returnObjects: true })}
-
+        
       />
       <ProjectPart 
         title={t("projects.project2.title")} 
@@ -28,7 +30,7 @@ const Projects = () => {
         { returnObjects: true })}
         functionList={t("projects.project2.functionList",
         { returnObjects: true })}
-        img={GithubWhite} 
+        img={Claims} 
       />
       <ProjectPart 
         title={t("projects.project3.title")} 
@@ -37,7 +39,7 @@ const Projects = () => {
         { returnObjects: true })} 
         functionList={t("projects.project3.functionList",
         { returnObjects: true })}
-        img={GithubWhite} 
+        img={Schackeriet} 
         linkList = {t("projects.project3.linkList",
         { returnObjects: true })}
         linkNamesList = {t("projects.project3.linkNames",

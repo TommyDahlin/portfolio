@@ -11,6 +11,7 @@ export const ProjectPart = ({ title,
     linkNamesList }) => {
   const { t } = useTranslation();
   const [isCollapsed, setIsCollapsed] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const dataTheme = document.body.dataset.theme || "dark";
   
   // Handle both single description or array of descriptions
@@ -21,6 +22,14 @@ export const ProjectPart = ({ title,
 
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -49,10 +58,21 @@ export const ProjectPart = ({ title,
               <DescriptionItem key={index}>{func}</DescriptionItem>
             ))}
           </DescriptionArea>
-          <ProjectIMG>
+          <ProjectIMG onClick={openModal}>
             <img src={img} alt={title} />
+            <ClickInstruction>Click to enlarge</ClickInstruction>
           </ProjectIMG>
         </ContentArea>
+      )}
+      
+      {isModalOpen && (
+        <Modal>
+          <ModalOverlay onClick={closeModal} />
+          <ModalContent>
+            <CloseButton onClick={closeModal}>&times;</CloseButton>
+            <ModalImage src={img} alt={title} />
+          </ModalContent>
+        </Modal>
       )}
     </Wrapper>
   )
@@ -153,15 +173,100 @@ const DescriptionItem = styled.p`
 
 const ProjectIMG = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 20px;
+  cursor: pointer;
+  position: relative;
   
   img {
     max-width: 100%;
     max-height: 200px;
     border-radius: 8px;
     object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover img {
+    transform: scale(1.02);
+  }
+`;
+
+const ClickInstruction = styled.span`
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 5px;
+  opacity: 0.7;
+`;
+
+const Modal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`;
+
+const ModalOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+`;
+
+const ModalContent = styled.div`
+  position: relative;
+  z-index: 1001;
+  max-width: 90%;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ModalImage = styled.img`
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+`;
+
+const CloseButton = styled.button`
+  position: absolute;
+  top: -35px;
+  right: -35px;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
   }
 `;
