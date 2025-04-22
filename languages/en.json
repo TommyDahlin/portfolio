@@ -57,35 +57,29 @@
 },
 "skills": {
     "skillsHeader": "These are my skills.",
-    "skillsList": {
-            "skill1": "JavaScript",
-            "skill2": "React",
-            "skill3": "Node.js",
-            "skill4": "CSS",
-            "skill5": "HTML",
-            "skill6": "TypeScript",
-            "skill7": "Java",
-            "skill8": "Spring Boot",
-            "skill9": "MongoDB",
-            "skill10": "Git",
-            "skill11": "HTML",
-            "skill12": "Bun",
-            "skill13": "Git",
-            "skill14": "Postman/Insomnia"
-        },
+    "skillsList": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "CSS",
+        "HTML",
+        "TypeScript",
+        "Java",
+        "Spring Boot",
+        "MongoDB",
+         "Git",
+         "HTML",
+         "Bun",
+         "Git",
+         "Postman/Insomnia"
+     ],
     "learningHeader": "This is what i'm currently working on learning",
-    "learningList": {
-        "learning1": "TypeScript",
-        "learning2": "Next.js",
-        "learning3": "Vite",
-        "learning4": "Redux",
-        "learning5": "Git",
-        "learning6" : "HTML",
-        "learning7" : "CSS",
-        "learning8" : "Node.JS",
-        "learning9" : "Bun",
-        "learning10" : "deno"
-    }
+    "learningList": [
+        "Node.JS",
+        "deno",
+        "Monads",
+        "Rust"
+    ]
 },
 "changeableTitle": {
     "title": "Change title",

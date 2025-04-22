@@ -5,18 +5,18 @@ const Contact = () => {
     const { t } = useTranslation()
   return (
     <>
-        <Text text={t("app.contact.title")} hover={3} size={"1.8rem"} />
+        <Text text={t("app.contact.title")} hover={3} size={"4rem"} />
           <LinkHolders>
-            <Text text={t("app.contact.description")} size={"1.5rem"} />
+            <Text text={t("app.contact.description")} size={"3rem"} />
             <Text
               text="LinkedIn"
-              size={"1.5rem"}
+              size={"3rem"}
               link={"https://www.linkedin.com/in/tommy-dahlin-5171a72aa/"}
             />
-            <Text text=" or " size={"1.5rem"} />
+            <Text text=" or " size={"3rem"} />
             <Text
               text="GitHub"
-              size={"1.5rem"}
+              size={"3rem"}
               link={"https://github.com/TommyDahlin"}
             />
           </LinkHolders>

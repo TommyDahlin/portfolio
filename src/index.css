@@ -40,6 +40,7 @@ html, body {
   .ul-holder {
     background-color: #000000;
     color: #ffffff;
+    box-shadow: #151515 0px 2px 10px;
   }
   a:hover {
     color: #2a2c5d;
@@ -62,7 +63,8 @@ html, body {
   }
   .ul-holder {
     background-color: #ffffff;
-    color: #000000
+    color: #000000;
+    box-shadow: #000000 0px 4px 10px;
   }
   .linkedin-icon {
     background-color: white;
