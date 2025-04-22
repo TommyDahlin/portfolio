@@ -2,9 +2,13 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import { useTranslation } from "react-i18next";
 
-export const ProjectPart = ({ title, description, descriptionList, img, functionList }) => {
+export const ProjectPart = ({ title,
+    description,
+    descriptionList,
+    img,
+    functionList }) => {
   const { t } = useTranslation();
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const dataTheme = document.body.dataset.theme || "dark";
   
   // Handle both single description or array of descriptions

@@ -11,10 +11,12 @@ const Projects = () => {
         title={t("projects.project1.title")}
         description={t("projects.project1.description")}
         functionList={t("projects.project1.functionList",
-            { returnObjects: true })}
+        { returnObjects: true })}
         descriptionList={t("projects.project1.descriptionList",
         { returnObjects: true })} 
-        img={GithubWhite} 
+        img={GithubWhite}
+        
+
       />
       <ProjectPart 
         title={t("projects.project2.title")} 

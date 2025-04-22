@@ -14,26 +14,28 @@
     },
     "projects": {
         "title": "Dessa är några av mina projekt.",
-        "learned": "Vad jag lärt mig: ",
+        "learned": "Vad jag lärt mig / beskrivning : ",
         "project1": {
             "title": "Celemo, Auktionsapp",
             "description": "Genom utbildningen så gjorde jag och min grupp en auktionsapp som heter Celemo. Detta är en app med fokus på att hjälpa till med att sälja och köpa saker, specifikt kändis memorabilia. Appen är byggd med React och Node.js. Vi använde oss av MongoDB som databas och Spring Boot java för serverhantering.",
             "descriptionList": ["Att använda websocket för realtids-uppdateringar.", "Sätta upp och använda scheduling/cron-jobb i backend.", "Användning av agil metodik samt kanban board."],
-            "functions": "Funktionalitet:",
-            "functionList": ["Inloggning och registrering", "Sälj och köp", "Profilsida, privat och publik", "Realtids notiser", "Realtids meddelanden", "Roller och behörigheter, samt adminportal för diverse hantering av användare.", "Sök och filtrering"]
+            "functionList": ["Inloggning och registrering", "Sälj och köp", "Profilsida, privat och publik", "Realtids notiser", "Realtids meddelanden", "Roller och behörigheter, samt adminportal för diverse hantering av användare.", "Sök och filtrering"],
+            "linkList": ["https://github.com/NybergViktor/Celemo_FrontEnd", "https://github.com/TommyDahlin/Celemo_Backend"],
+            "linkNames": ["Celemo's Frontend Repo", "Celemo's Backend Repo"]
         },
         "project2": {
-            "title": "Project 2 temporär text",
-            "description": "Description of project 2.",
-            "descriptionList": ["Test1","Test2","Test3","Test4","Test5"],
-            "functionList": ["Test1","Test2","Test3","Test4","Test5"]
-
+           "title": "Claims manager",
+            "description": "Claims manager är en app som hjälper dig att hantera dina försäkringsärenden. Appen är byggd likt Celemo, med Spring Boot och React + Vite.",
+            "descriptionList": ["Detta är nog det mest utvecklade projektet jag gjort.","Repot ligger just nu privat för att jag har eventuellt en kund som skall använda sig av den."],
+            "functionList": ["Använder mig av temporära användare för att ha samspel mellan olika företag.", "Har funktioner som skapar nya objekt för att hålla koll på nya garantier och försäkringar."]
         },
         "project3": {
-            "title": "Project 3 temporär text",
-            "description": "Description of project 3.",
-            "descriptionList": ["Test1","Test2","Test3","Test4","Test5"],
-            "functionList": ["Test1","Test2","Test3","Test4","Test5"]
+            "title": "Schackeriet, schack community manager.",
+            "description": "Schackeriet är en schack community manager. Det är en app som hjälper dig hitta klubbar i närheten samt anordna events. Appen är byggd med Typescript och Next.Js.",
+            "descriptionList": ["Använder typescript för både frontend och backend.", "Använder react-i18next för översättningar.", "Implementerar Googles maps API."],
+            "functionList": [""],
+            "linkList": ["https://schackeriet.se"],
+            "linkNames": ["Schackeriets hemsida"]
         }
     },
     "skills": {
