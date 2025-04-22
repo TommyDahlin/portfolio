@@ -18,15 +18,15 @@ const ImgHolderDiv = styled.div`
   display: flex;
   flex-direction: row;
   padding: 4rem;
+  width: calc(100% - 4rem);
   margin-left: 4rem;
   padding: 0;
   position: relative;
   top: 10;
+  width: 100%;
   @media (max-width: 768px) {
-    padding: 0;
-    width: 5%;
-    height: 5%;
-    margin: 0;
+    padding-left: 0;
+    width: 100%;
   }
   img {
     transition: transform 0.35s ease-out;
@@ -47,9 +47,5 @@ const StyledImg = styled.img`
   :hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
-  }
-  @media (max-width: 768px) {
-    width: 200px;
-    height: 200px;
   }
 `;
