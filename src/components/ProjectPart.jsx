@@ -2,7 +2,13 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import { useTranslation } from "react-i18next";
 
-export const ProjectPart = ({ title, description, descriptionList, img, functionList }) => {
+export const ProjectPart = ({ title,
+    description,
+    descriptionList,
+    img,
+    functionList,
+    linkList,
+    linkNamesList }) => {
   const { t } = useTranslation();
   const [isCollapsed, setIsCollapsed] = useState(false);
   const dataTheme = document.body.dataset.theme || "dark";
@@ -10,6 +16,8 @@ export const ProjectPart = ({ title, description, descriptionList, img, function
   // Handle both single description or array of descriptions
   const descriptions = descriptionList || (description ? [description] : []);
   const functions = functionList || (functionList ? [functionList] : []);
+  const links = linkList || (linkList ? [linkList] : []);
+  const linkNames = linkNamesList || (linkNamesList ? [linkNamesList] : []);
 
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
@@ -24,7 +32,10 @@ export const ProjectPart = ({ title, description, descriptionList, img, function
         </CollapseButton>
       </TitleArea>
       {!isCollapsed && (
-        <ContentArea>
+          <ContentArea>
+          {links.map((link, index) => ( 
+            <a href={link} key={index}>{linkNames[index]}</a>
+          ))}
           <DescriptionArea>
             <h3>{description}</h3>
             <h3>{t("projects.learned")}</h3>
@@ -33,7 +44,7 @@ export const ProjectPart = ({ title, description, descriptionList, img, function
             ))}
           </DescriptionArea>
           <DescriptionArea>
-            <h3>{t("projects.project1.functions")}</h3>
+            <h3>{t("projects.functions")}</h3>
             {functions.map((func, index) => (
               <DescriptionItem key={index}>{func}</DescriptionItem>
             ))}
