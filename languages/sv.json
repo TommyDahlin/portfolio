@@ -17,7 +17,7 @@
         "learned": "Vad jag lärt mig / beskrivning : ",
         "functions": "Funktionalitet:",
         "project1": {
-            "title": "Celemo, Auktionsapp",
+            "title": "Celemo",
             "description": "Genom utbildningen så gjorde jag och min grupp en auktionsapp som heter Celemo. Detta är en app med fokus på att hjälpa till med att sälja och köpa saker, specifikt kändis memorabilia. Appen är byggd med React och Node.js. Vi använde oss av MongoDB som databas och Spring Boot java för serverhantering.",
             "descriptionList": ["Att använda websocket för realtids-uppdateringar.", "Sätta upp och använda scheduling/cron-jobb i backend.", "Användning av agil metodik samt kanban board."],
             "functionList": ["Inloggning och registrering", "Sälj och köp", "Profilsida, privat och publik", "Realtids notiser", "Realtids meddelanden", "Roller och behörigheter, samt adminportal för diverse hantering av användare.", "Sök och filtrering"],
@@ -31,7 +31,7 @@
             "functionList": ["Använder mig av temporära användare för att ha samspel mellan olika företag.", "Har funktioner som skapar nya objekt för att hålla koll på nya garantier och försäkringar gällande delar.", "Statistik över antal försäkringsärenden och garantier samt statistik över kostnader och hur bråttom det är."]
         },
         "project3": {
-            "title": "Schackeriet, schack community manager.",
+            "title": "Schackeriet",
             "description": "Schackeriet är en schack community manager. Det är en app som hjälper dig hitta klubbar i närheten samt anordna events. Appen är byggd med Typescript och Next.Js.",
             "descriptionList": ["Använder typescript för både frontend och backend.", "Använder react-i18next för översättningar.", "Implementerar Googles maps API."],
             "functionList": [""],
@@ -41,26 +41,29 @@
     },
     "skills": {
         "skillsHeader": "Dessa är mina färdigheter: ",
-        "skillsList": {
-            "skill1": "JavaScript",
-            "skill2": "React",
-            "skill3": "Node.js",
-            "skill4": "CSS",
-            "skill5": "HTML"
-        },
+        "skillsList": [
+           "JavaScript",
+           "React",
+           "Node.js",
+           "CSS",
+           "HTML",
+           "TypeScript",
+           "Java",
+           "Spring Boot",
+           "MongoDB",
+            "Git",
+            "HTML",
+            "Bun",
+            "Git",
+            "Postman/Insomnia"
+        ],
         "learningHeader": "Detta är vad jag jobbar på att lära mig: ",
-        "learningList": {
-            "learning1": "TypeScript",
-            "learning2": "Next.js",
-            "learning3": "Vite",
-            "learning4": "Redux",
-            "learning5": "Git",
-            "learning6": "HTML",
-            "learning7": "CSS",
-            "learning8": "Node.JS",
-            "learning9": "Bun",
-            "learning10": "deno"
-        }
+        "learningList": [
+            "Node.JS",
+            "deno",
+            "Monads",
+            "Rust"
+        ]
     },
     "changeableTitle": {
         "title": "Ändra titel",

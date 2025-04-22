@@ -24,10 +24,6 @@ const ImgHolderDiv = styled.div`
   position: relative;
   top: 10;
   width: 100%;
-  @media (max-width: 768px) {
-    padding-left: 0;
-    width: 100%;
-  }
   img {
     transition: transform 0.35s ease-out;
   }
@@ -35,6 +31,18 @@ const ImgHolderDiv = styled.div`
     transform: scale(1.05);
     transition: transform 0.35s ease-out;
   }
+  @media (max-width: 768px) {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      margin: 0;
+    }
+  }
+  
 `;
 
 const StyledImg = styled.img`
@@ -47,5 +55,11 @@ const StyledImg = styled.img`
   :hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0;
   }
 `;

@@ -33,7 +33,7 @@
     "learned": "What I learned / Description : ",
     "functions": "Functionality:",
     "project1": {
-        "title": "Celemo, Auction app",
+        "title": "Celemo",
         "description": "Through my education me and my group created Celemo. It is an app that helps you sell and buy things, specifically celebrity memorabilia. The app is built with React and Node.js. We used MongoDB as our database and Spring Boot java for our server. The app has a login and registration system. The app also has a function to sell and buy things. The app also has a function to see your sold and bought items. The app also has a function to see your profile. The app also has a function to see your notifications. The app also has a function to see your messages. The app also has a function to see your tasks.",
         "descriptionList": ["Using websocket for real-time updates", "Setting up and using scheduling/cron-jobs in backend.", "Using agile software development and using a kanban board."],
         "functionList": ["Login and registration", "Selling and buying", "Profile page, private and public", "Real-time notifications", "Real-time messages", "Roles and permissions, as well as admin portal for various user management.", "Search and filtering"],
@@ -47,7 +47,7 @@
         "functionList": ["Using temporary users to have interactions between different companies.", "Having functions that create new objects to keep track of new warranties and insurance claims related to parts.", "Also statistics about how many insurance claims and warranty claims there are and cost related to them, as well as urgency."]
     },
     "project3": {
-        "title": "Schackeriet, chess community manager.",
+        "title": "Schackeriet",
         "description": "Schackeriet is a chess community manager. It is an app that helps you find chess clubs in your area as well as organize events. The app is built with Typescript, Next.Js, mongoose and React.",
         "descriptionList": ["Using typescript for both frontend and backend.", "Using react-i18next for translations.", "Implementing Googles maps API."],
         "functionList": [""],
@@ -58,12 +58,21 @@
 "skills": {
     "skillsHeader": "These are my skills.",
     "skillsList": {
-        "skill1": "JavaScript",
-        "skill2": "React",
-        "skill3": "Node.js",
-        "skill4": "CSS",
-        "skill5": "HTML"
-    },
+            "skill1": "JavaScript",
+            "skill2": "React",
+            "skill3": "Node.js",
+            "skill4": "CSS",
+            "skill5": "HTML",
+            "skill6": "TypeScript",
+            "skill7": "Java",
+            "skill8": "Spring Boot",
+            "skill9": "MongoDB",
+            "skill10": "Git",
+            "skill11": "HTML",
+            "skill12": "Bun",
+            "skill13": "Git",
+            "skill14": "Postman/Insomnia"
+        },
     "learningHeader": "This is what i'm currently working on learning",
     "learningList": {
         "learning1": "TypeScript",

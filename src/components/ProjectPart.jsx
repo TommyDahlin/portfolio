@@ -34,7 +34,7 @@ export const ProjectPart = ({ title,
 
   return (
     <Wrapper isCollapsed={isCollapsed} data-theme={dataTheme}>
-      <TitleArea>
+      <TitleArea >
         <ProjectTitle>{title}</ProjectTitle>
         <CollapseButton onClick={toggleCollapse}>
           {isCollapsed ? "+" : "-"}
