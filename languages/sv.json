@@ -15,6 +15,7 @@
     "projects": {
         "title": "Dessa är några av mina projekt.",
         "learned": "Vad jag lärt mig / beskrivning : ",
+        "functions": "Funktionalitet:",
         "project1": {
             "title": "Celemo, Auktionsapp",
             "description": "Genom utbildningen så gjorde jag och min grupp en auktionsapp som heter Celemo. Detta är en app med fokus på att hjälpa till med att sälja och köpa saker, specifikt kändis memorabilia. Appen är byggd med React och Node.js. Vi använde oss av MongoDB som databas och Spring Boot java för serverhantering.",
@@ -27,7 +28,7 @@
            "title": "Claims manager",
             "description": "Claims manager är en app som hjälper dig att hantera dina försäkringsärenden. Appen är byggd likt Celemo, med Spring Boot och React + Vite.",
             "descriptionList": ["Detta är nog det mest utvecklade projektet jag gjort.","Repot ligger just nu privat för att jag har eventuellt en kund som skall använda sig av den."],
-            "functionList": ["Använder mig av temporära användare för att ha samspel mellan olika företag.", "Har funktioner som skapar nya objekt för att hålla koll på nya garantier och försäkringar."]
+            "functionList": ["Använder mig av temporära användare för att ha samspel mellan olika företag.", "Har funktioner som skapar nya objekt för att hålla koll på nya garantier och försäkringar gällande delar.", "Statistik över antal försäkringsärenden och garantier samt statistik över kostnader och hur bråttom det är."]
         },
         "project3": {
             "title": "Schackeriet, schack community manager.",

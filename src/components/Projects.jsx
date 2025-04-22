@@ -15,14 +15,19 @@ const Projects = () => {
         descriptionList={t("projects.project1.descriptionList",
         { returnObjects: true })} 
         img={GithubWhite}
-        
+        linkList = {t("projects.project1.linkList",
+          { returnObjects: true })}
+          linkNamesList = {t("projects.project1.linkNames",
+          { returnObjects: true })}
 
       />
       <ProjectPart 
         title={t("projects.project2.title")} 
         description={t("projects.project2.description")}
         descriptionList={t("projects.project2.descriptionList",
-        { returnObjects: true })} 
+        { returnObjects: true })}
+        functionList={t("projects.project2.functionList",
+        { returnObjects: true })}
         img={GithubWhite} 
       />
       <ProjectPart 
@@ -30,7 +35,13 @@ const Projects = () => {
         description={t("projects.project3.description")}
         descriptionList={t("projects.project3.descriptionList",
         { returnObjects: true })} 
+        functionList={t("projects.project3.functionList",
+        { returnObjects: true })}
         img={GithubWhite} 
+        linkList = {t("projects.project3.linkList",
+        { returnObjects: true })}
+        linkNamesList = {t("projects.project3.linkNames",
+        { returnObjects: true })}
       />
     </Holder>
   );

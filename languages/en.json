@@ -31,11 +31,11 @@
 "projects": {
     "title": "These are some of my projects.",
     "learned": "What I learned / Description : ",
+    "functions": "Functionality:",
     "project1": {
         "title": "Celemo, Auction app",
         "description": "Through my education me and my group created Celemo. It is an app that helps you sell and buy things, specifically celebrity memorabilia. The app is built with React and Node.js. We used MongoDB as our database and Spring Boot java for our server. The app has a login and registration system. The app also has a function to sell and buy things. The app also has a function to see your sold and bought items. The app also has a function to see your profile. The app also has a function to see your notifications. The app also has a function to see your messages. The app also has a function to see your tasks.",
         "descriptionList": ["Using websocket for real-time updates", "Setting up and using scheduling/cron-jobs in backend.", "Using agile software development and using a kanban board."],
-        "functions": "Functionality:",
         "functionList": ["Login and registration", "Selling and buying", "Profile page, private and public", "Real-time notifications", "Real-time messages", "Roles and permissions, as well as admin portal for various user management.", "Search and filtering"],
         "linkList": ["https://github.com/NybergViktor/Celemo_FrontEnd", "https://github.com/TommyDahlin/Celemo_Backend"],
         "linkNames": ["Celemo's Frontend Repo", "Celemo's Backend Repo"]
@@ -44,7 +44,7 @@
         "title": "Claims manager",
         "description": "Claims manager is an app that helps you manage warranty or insurance claims. It's built like Celemo, using React + Vite for frontend and Java Spring Boot for backend.",
         "descriptionList": ["This is probably my most developed project so far.","The repo is currently private as I have a potential customer that might use it."],
-        "functionList": ["Using temporary users to have interactions between different companies.", "Having functions that create new objects to keep track of new warranties and insurance claims."]
+        "functionList": ["Using temporary users to have interactions between different companies.", "Having functions that create new objects to keep track of new warranties and insurance claims related to parts.", "Also statistics about how many insurance claims and warranty claims there are and cost related to them, as well as urgency."]
     },
     "project3": {
         "title": "Schackeriet, chess community manager.",
