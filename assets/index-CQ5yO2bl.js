@@ -277,15 +277,15 @@ min-height: 10rem;
   display: flex;
   flex-direction: row;
   padding: 4rem;
-  width: calc(100% - 4rem);
   margin-left: 4rem;
   padding: 0;
   position: relative;
   top: 10;
-  width: 100%;
   @media (max-width: 768px) {
-    padding-left: 0;
-    width: 100%;
+    padding: 0;
+    width: 5%;
+    height: 5%;
+    margin: 0;
   }
   img {
     transition: transform 0.35s ease-out;
@@ -304,6 +304,10 @@ min-height: 10rem;
   :hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 200px;
   }
 `;function zy(){const{t:u}=ln();return document.body.dataset.theme=localStorage.getItem("theme")||"dark",U.jsxs(U.Fragment,{children:[U.jsx(ny,{}),U.jsxs(Dy,{className:"title-holder",children:[U.jsx(le,{text:u("app.major-title"),size:4}),U.jsx(by,{})]}),U.jsx(Ry,{className:"wrapper",children:U.jsxs("ul",{className:"pointer-list",children:[U.jsx(le,{text:u("app.title"),hover:3,size:"1.8"}),U.jsx(le,{text:u("app.description"),size:"1.5"}),U.jsx(Oy,{}),U.jsx(py,{}),U.jsx(yy,{}),U.jsx(vy,{}),U.jsxs(Ny,{children:[U.jsx(le,{text:u("app.contact.email")+": TommyDahlin95@outlook.com",size:"1.5"}),U.jsx(le,{text:u("app.regards.goodDay"),size:"1.5"}),U.jsx(le,{text:u("app.regards.regards"),size:"1.5"})]})]})}),U.jsx(ry,{})]})}const Ry=Ct.div`
   display: flex;
@@ -326,8 +330,9 @@ min-height: 10rem;
   width: 90%; /* Adjust width to account for padding */
   @media (max-width: 768px) {
     flex-direction: column;
-    padding-left: 0;
+    padding: 5px;
     margin-bottom: 4rem;
+    margin-left: 1rem;
   }
 `,Ny=Ct.div`
   display: flex;
