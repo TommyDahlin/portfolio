@@ -30,17 +30,24 @@
 },
 "projects": {
     "title": "These are some of my projects.",
+    "learned": "What I learned: ",
     "project1": {
-        "title": "Project 1 temporary text",
-        "description": "Description of project 1."
+        "title": "Celemo, Auction app",
+        "description": "Through my education me and my group created Celemo. It is an app that helps you sell and buy things, specifically celebrity memorabilia. The app is built with React and Node.js. We used MongoDB as our database and Spring Boot java for our server. The app has a login and registration system. The app also has a function to sell and buy things. The app also has a function to see your sold and bought items. The app also has a function to see your profile. The app also has a function to see your notifications. The app also has a function to see your messages. The app also has a function to see your tasks.",
+        "descriptionList": ["Using websocket for real-time updates", "Setting up and using scheduling/cron-jobs in backend.", "Using agile software development and using a kanban board."],
+        "functions": "Functionality:",
+        "functionList": ["Login and registration", "Selling and buying", "Profile page, private and public", "Real-time notifications", "Real-time messages", "Roles and permissions, as well as admin portal for various user management.", "Search and filtering"]
     },
     "project2": {
         "title": "Project 2 temporary text",
-        "description": "Description of project 2."
+        "description": "Description of project 2.",
+        "descriptionList": ["Test1","Test2","Test3","Test4","Test5"]
     },
     "project3": {
         "title": "Project 3 temporary text",
-        "description": "Description of project 3."
+        "description": "Description of project 3.",
+        "functionList": ["Test1","Test2","Test3","Test4","Test5"],
+        "descriptionList": ["Test1","Test2","Test3","Test4","Test5"]
     }
 },
 "skills": {

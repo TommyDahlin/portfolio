@@ -5,11 +5,11 @@ import React from "react";
 import Text from "./components/Text";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import Photo from "./img/pfp.jpg";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import ChangeableTitle from "./components/ChangeableTitle";
+import ImgHolder from "./components/ImgHolder";
 
 function App() {
   const { t } = useTranslation();
@@ -27,6 +27,7 @@ function App() {
         <ul className="pointer-list">
           <Text text={t("app.title")} hover={3} size={"1.8"} />
           <Text text={t("app.description")} size={"1.5"} />
+          <ImgHolder />
           <Projects />
           <Skills />
           <Contact />
@@ -39,9 +40,6 @@ function App() {
             <Text text={t("app.regards.regards")} size={"1.5"} />
           </BottomTextHolder>
         </ul>
-        <ImgHolder>
-          <StyledImg src={Photo} alt="Tommy Dahlin" />
-        </ImgHolder>
       </Wrapper>
       <Footer />
     </>
@@ -57,6 +55,9 @@ const Wrapper = styled.div`
   width: 100%;
   @media (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
   }
 `;
 
@@ -86,38 +87,4 @@ const BottomTextHolder = styled.div`
   bottom: 0;
   left: 0;
 `;
-const ImgHolder = styled.div`
-  display: flex;
-  flex-direction: row;
-  padding: 4rem;
-  width: calc(100% - 4rem);
-  margin-left: 4rem;
-  padding: 0;
-  position: relative;
-  top: 10;
-  width: 100%;
-  @media (max-width: 768px) {
-    padding-left: 0;
-    width: 100%;
-  }
-  img {
-    transition: transform 0.35s ease-out;
-  }
-  img:hover {
-    transform: scale(1.05);
-    transition: transform 0.35s ease-out;
-  }
-`;
 
-const StyledImg = styled.img`
-  width: 400px;
-  height: 400px;
-  border-radius: 40%;
-  margin: 1rem;
-  border: 3px solid #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  :hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
-  }
-`;

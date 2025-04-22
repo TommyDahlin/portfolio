@@ -7,21 +7,6 @@
     },
     "app": {
         "title": "Portfölj",
-        "description": "Detta är min portfölj, där jag presenterar mina projekt och färdigheter.",
-        "projects": {
-            "title": "Projekt",
-            "description": "Detta är några av mina projekt."
-        },
-        "skills": {
-            "title": "Färdigheter",
-            "description": "Detta är mina färdigheter."
-        },
-        "contact": {
-            "title": "Kontakt",
-            "description": "Kontakta mig gärna på ",
-            "or": " eller ",
-            "email": "E-post"
-        },
         "regards": {
             "goodDay": "Ha en bra dag!",
             "regards": "Med vänliga hälsningar, Tommy Dahlin."
@@ -29,17 +14,26 @@
     },
     "projects": {
         "title": "Dessa är några av mina projekt.",
+        "learned": "Vad jag lärt mig: ",
         "project1": {
-            "title": "Project 1 temporär text",
-            "description": "Description of project 1."
+            "title": "Celemo, Auktionsapp",
+            "description": "Genom utbildningen så gjorde jag och min grupp en auktionsapp som heter Celemo. Detta är en app med fokus på att hjälpa till med att sälja och köpa saker, specifikt kändis memorabilia. Appen är byggd med React och Node.js. Vi använde oss av MongoDB som databas och Spring Boot java för serverhantering.",
+            "descriptionList": ["Att använda websocket för realtids-uppdateringar.", "Sätta upp och använda scheduling/cron-jobb i backend.", "Användning av agil metodik samt kanban board."],
+            "functions": "Funktionalitet:",
+            "functionList": ["Inloggning och registrering", "Sälj och köp", "Profilsida, privat och publik", "Realtids notiser", "Realtids meddelanden", "Roller och behörigheter, samt adminportal för diverse hantering av användare.", "Sök och filtrering"]
         },
         "project2": {
             "title": "Project 2 temporär text",
-            "description": "Description of project 2."
+            "description": "Description of project 2.",
+            "descriptionList": ["Test1","Test2","Test3","Test4","Test5"],
+            "functionList": ["Test1","Test2","Test3","Test4","Test5"]
+
         },
         "project3": {
             "title": "Project 3 temporär text",
-            "description": "Description of project 3."
+            "description": "Description of project 3.",
+            "descriptionList": ["Test1","Test2","Test3","Test4","Test5"],
+            "functionList": ["Test1","Test2","Test3","Test4","Test5"]
         }
     },
     "skills": {

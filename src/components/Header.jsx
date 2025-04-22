@@ -65,7 +65,10 @@ min-width: 12vw;
 @media screen and (max-width: 768px) {
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  min-width: 100%;
+  :nth-child(1){
+    margin-bottom: 1rem;
+  }
 }
 `
 const Wrapper = styled.div`

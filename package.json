@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "publish": "bun run build && cd dist && git add * && git commit -m 'deploy' && git push -f https://github.com/TommyDahlin/portfolio/ master:github-pages && cd .."
   },
   "dependencies": {
     "react": "^19.0.0",
