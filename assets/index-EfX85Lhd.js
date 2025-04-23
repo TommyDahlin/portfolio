@@ -72,6 +72,7 @@ min-width: 12vw;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
   @media screen and (max-width: 768px){
     flex-direction: column;
   }
@@ -395,26 +396,26 @@ min-height: 10rem;
     border-radius: 10px;
     margin: 0;
   }
-`;function wy(){const{t:u}=ln();return document.body.dataset.theme=localStorage.getItem("theme")||"dark",U.jsxs(U.Fragment,{children:[U.jsx(ay,{}),U.jsxs(Hy,{className:"title-holder",children:[U.jsx(le,{text:u("app.major-title"),size:4}),U.jsx(jy,{})]}),U.jsx(Ly,{className:"wrapper",children:U.jsxs("ul",{className:"pointer-list",children:[U.jsx(le,{text:u("app.title"),hover:3,size:"1.8"}),U.jsx(le,{text:u("app.description"),size:"1.5"}),U.jsx(Cy,{}),U.jsx(Ey,{}),U.jsx(Ry,{}),U.jsx(zy,{}),U.jsxs(By,{children:[U.jsx(le,{text:u("app.contact.email")+": TommyDahlin95@outlook.com",size:"1.5"}),U.jsx(le,{text:u("app.regards.goodDay"),size:"1.5"}),U.jsx(le,{text:u("app.regards.regards"),size:"1.5"})]})]})}),U.jsx(ry,{})]})}const Ly=xt.div`
+`;function wy(){const{t:u}=ln();return document.body.dataset.theme=localStorage.getItem("theme")||"dark",U.jsxs(U.Fragment,{children:[U.jsx(ay,{}),U.jsxs(Hy,{className:"title-holder",children:[U.jsx(le,{text:u("app.major-title"),size:4}),U.jsx(jy,{})]}),U.jsx(Ly,{children:U.jsxs("ul",{className:"pointer-list",children:[U.jsx(le,{text:u("app.title"),hover:3,size:"1.8"}),U.jsx(le,{text:u("app.description"),size:"1.5"}),U.jsx(Cy,{}),U.jsx(Ey,{}),U.jsx(Ry,{}),U.jsx(zy,{}),U.jsxs(By,{children:[U.jsx(le,{text:u("app.contact.email")+": TommyDahlin95@outlook.com",size:"1.5"}),U.jsx(le,{text:u("app.regards.goodDay"),size:"1.5"}),U.jsx(le,{text:u("app.regards.regards"),size:"1.5"})]})]})}),U.jsx(ry,{})]})}const Ly=xt.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding: 0 30vw;
+  margin: 0;
   width: 100%;
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    padding: 0;
+    width: 100%;
   }
 `,Hy=xt.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
-  align-items: center;
-  padding-left: 10%; /* Use padding instead of margin */
-  width: 90%; /* Adjust width to account for padding */
+  width: 90%; 
   @media (max-width: 768px) {
     flex-direction: column;
     padding-left: 0;
