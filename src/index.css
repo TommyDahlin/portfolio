@@ -20,9 +20,17 @@
 }
 html, body {
   min-height: 100vh;
+  min-width: 100vw;
   overflow-x: hidden;
   width: 100%;
-  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  transition: all 0.2s ease, color 0.2s ease;
+  width: 100%;
 }
 
 * {
@@ -36,7 +44,6 @@ html, body {
     background-color: #242424;
     color: #ffffff;
   }
- 
   .ul-holder {
     background-color: #000000;
     color: #ffffff;
@@ -88,15 +95,6 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  transition: all 0.175s ease, color 0.175s ease;
-  width: 100%;
-}
 
 h1 {
   font-size: 3.2em;
@@ -112,7 +110,7 @@ button {
   font-family: inherit;
   cursor: pointer;
   background-color: inherit;
-  transition: all 0.175s ease;
+  transition: all 0.2s ease;
 }
 button:hover {
   border-color: #646cff;
@@ -155,16 +153,9 @@ button:focus-visible {
     border-radius: 50%;
   }
 }
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 80vh;
-  z-index: -1;
-}
 .pointer-list {
   border-radius: 7px;
-  width: 80%;
-  margin-left: 20vw;
+  width: 100%;
 }
 
 /* Add these responsive styles at the end of your existing CSS */

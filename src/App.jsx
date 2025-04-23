@@ -13,7 +13,6 @@ import ImgHolder from "./components/ImgHolder";
 
 function App() {
   const { t } = useTranslation();
-  // Check for saved theme in local storage
     document.body.dataset.theme = localStorage.getItem("theme") || "dark";
 
   return (
@@ -23,7 +22,7 @@ function App() {
         <Text text={t("app.major-title")} size={4} />
         <ChangeableTitle />   
       </TitleHolder>
-      <Wrapper className="wrapper">
+      <Wrapper>
         <ul className="pointer-list">
           <Text text={t("app.title")} hover={3} size={"1.8"} />
           <Text text={t("app.description")} size={"1.5"} />
@@ -40,24 +39,28 @@ function App() {
             <Text text={t("app.regards.regards")} size={"1.5"} />
           </BottomTextHolder>
         </ul>
-      </Wrapper>
+        </Wrapper>
       <Footer />
     </>
   );
 }
 
 export default App;
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding: 0 30vw;
+  margin: 0;
   width: 100%;
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    padding: 0;
+    width: 100%;
   }
 `;
 
@@ -65,10 +68,7 @@ const TitleHolder = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
-  align-items: center;
-  padding-left: 10%; /* Use padding instead of margin */
-  width: 90%; /* Adjust width to account for padding */
+  width: 90%; 
   @media (max-width: 768px) {
     flex-direction: column;
     padding-left: 0;
@@ -88,4 +88,3 @@ const BottomTextHolder = styled.div`
   bottom: 0;
   left: 0;
 `;
-
